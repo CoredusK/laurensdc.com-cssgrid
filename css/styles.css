@@ -17,9 +17,14 @@ p {
     line-height:150%;
 }
 
+h1 {
+    display: none;
+}
+
 h2 {
     font-weight: 500;
     margin: 0;
+    font-size: 30px;
 }
 
 a {
@@ -55,10 +60,14 @@ a:hover {
     padding:20px;
 }
 
+/*************************************
+    Main-hi
+*/
+
 
 .main-hi {
     grid-column: 1 / 13;
-    grid-row: 1 / 7;
+    grid-row: 1 / 5;
 
     background-image: url('../images/my-face-2.jpg');
     background-size: cover;
@@ -88,10 +97,13 @@ a:hover {
     margin-top: 100px;
 }
 
+/*************************************
+    Projects-title
+*/
 
 .projects-title {
     grid-column: 1 / 7;
-    grid-row:  6 / 8;
+    grid-row:  7 / 8;
     z-index: 10;
 
     background-color: #FF5722;
@@ -99,19 +111,23 @@ a:hover {
 
     color: #111;
     font-weight: 500;
-    font-size: 30px;
+
 
     display: flex;
     align-items: center;
 }
 
-.projects-title p {
+.projects-title h2 {
     margin-left: 50px;
 }
 
+/*************************************
+    Projects
+*/
+
 .projects {
     grid-column: 6 / 13;
-    grid-row: 5 / 10;
+    grid-row: 6 / 11;
     z-index: 15;
 
     background-color: #FF5722;
@@ -174,25 +190,17 @@ div.projects {
     font-weight: 500;
 }
 
-.bio {
-    grid-column: 4 / 12;
-    grid-row: 10 / 14;
-
-    border-right: 2px solid #FF5722;
-    border-left: 2px solid #8BC34A;
-
-    z-index: 10;
-    background-color: #fafafa;
-}
-
-.bio h2 {
-    margin-top: 20px;
-}
+/*************************************
+    Blog
+*/
 
 .blog {
     grid-column: 1 / 6;
-    grid-row: 7 / 11;
+    grid-row: 8 / 12;
     z-index: 5;
+
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 450px;
 
     background-color: #8BC34A;
 
@@ -205,7 +213,7 @@ div.projects {
 
 div.blog {
     padding-right:75px;
-    padding-top:60px;
+    padding-top:120px;
 }
 
 .blog a:hover {
@@ -213,5 +221,28 @@ div.blog {
 }
 
 .blog h2 {
-    margin-top:150px;
+    margin-top:120px;
+}
+
+/*************************************
+    Bio
+*/
+
+.bio {
+    grid-column: 4 / 11;
+    grid-row: 11 / 15;
+
+    border-right: 2px solid #FF5722;
+    border-left: 2px solid #8BC34A;
+
+    z-index: 10;
+    background-color: #fafafa;
+}
+
+div.bio {
+    padding:50px 80px;
+}
+
+.bio h2 {
+    margin-top: 20px;
 }
