@@ -34,8 +34,49 @@ a {
 }
 
 a:hover {
-    color: #666;
+    color: #FF5722;
 }
+
+/*************************************
+    Main-hi
+*/
+
+.main-hi-container {
+    width:100%;
+    height:700px;
+
+    background-image: url('../images/my-face-2.jpg');
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-position: center 100px;
+
+    background-color: #060107;
+}
+
+.main-hi-content {
+    color: #eee;
+    text-align: left;
+
+    width: 35%;
+    margin-left: 50%;
+
+    padding-left: 30px;
+    padding-top: 180px;
+
+}
+
+.main-hi-content a {
+    color: #FF5722;
+}
+
+.main-hi-content a:hover {
+    color:#eee;
+}
+
+
+/*******************************
+    Grid
+*/
 
 .grid-container {
     display: grid;
@@ -60,42 +101,7 @@ a:hover {
     padding:20px;
 }
 
-/*************************************
-    Main-hi
-*/
 
-
-.main-hi {
-    grid-column: 1 / 13;
-    grid-row: 1 / 5;
-
-    background-image: url('../images/my-face-2.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-
-    color: #eee;
-    text-align: left;
-
-}
-
-.main-hi a {
-    color: #FF5722;
-}
-
-.main-hi a:hover {
-    color:#eee;
-}
-
-.main-hi p, .main-hi h2 {
-    width: 50%;
-    margin-left: 50%;
-    padding-left:30px;
-}
-
-.main-hi h2 {
-    margin-top: 100px;
-}
 
 /*************************************
     Projects-title
@@ -103,15 +109,14 @@ a:hover {
 
 .projects-title {
     grid-column: 2 / 7;
-    grid-row:  7 / 8;
+    grid-row:  2 / 3;
     z-index: 10;
 
-    background-color: #FF5722;
+    border: 5px solid #FF5722;
     border-radius: 20px;
 
     color: #111;
     font-weight: 500;
-
 
     display: flex;
     align-items: center;
@@ -127,11 +132,15 @@ a:hover {
 
 .projects {
     grid-column: 6 / 13;
-    grid-row: 6 / 11;
+    grid-row: 1 / 4;
     z-index: 15;
 
-    background-color: #FF5722;
-    border-radius: 20px;
+    border-left: 5px solid #FF5722;
+    border-right: 5px solid #FF5722;
+    border-bottom: 5px solid #FF5722;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #fff;
 
     color: #111;
 
@@ -151,7 +160,7 @@ div.projects {
 }
 
 .projects a:hover {
-    color:#eee;
+    color:#FF5722;
 }
 
 .projects article {
@@ -202,13 +211,14 @@ div.projects {
 
 .blog {
     grid-column: 1 / 6;
-    grid-row: 8 / 12;
+    grid-row: 3 / 5;
     z-index: 5;
 
     border-bottom-left-radius: 20px;
     border-top-left-radius: 450px;
 
-    background-color: #8BC34A;
+    border-left: 5px solid #8BC34A;
+    border-bottom: 5px solid #8BC34A;
 
     display:flex;
     flex-direction: column;
@@ -223,7 +233,7 @@ div.blog {
 }
 
 .blog a:hover {
-    color:#fff;
+
 }
 
 .blog h2 {
@@ -234,12 +244,28 @@ div.blog {
     Bio
 */
 
-.bio {
-    grid-column: 4 / 11;
-    grid-row: 11 / 15;
+.bio-title {
+    grid-column: 6 / 10;
+    grid-row: 4 / 5;
 
-    border-right: 2px solid #FF5722;
-    border-left: 2px solid #8BC34A;
+    border-right: 5px solid #FF5722;
+    border-left: 5px solid #8BC34A;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bio-border-right h2 {
+
+}
+
+.bio {
+    grid-column: 3 / 10;
+    grid-row: 5 / 8;
+
+    border-right: 5px solid #FF5722;
+    border-left: 5px solid #8BC34A;
 
     z-index: 10;
     background-color: #fafafa;
